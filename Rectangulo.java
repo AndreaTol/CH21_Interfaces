@@ -2,20 +2,21 @@ public class Rectangulo {
 	private String name;
 	private double base;
 	private double altura;
-	
+
 	public Rectangulo(String name, double base, double altura) {
-		super();
 		this.name = name;
 		this.base = base;
 		this.altura = altura;
-	}//constructor
-	
+	}// constructor
+
 	public double calcularArea() {
-		return (getBase() * getAltura());	
-	}//calcularArea
+		return (getBase() * getAltura());
+	}// calcularArea
+
 	public double calcularPerimetro() {
-		return ((getBase()*2) + (getAltura()*2 ));
+		return ((getBase() * 2) + (getAltura() * 2));
 	}// calcularPerimetro
+
 	public String getName() {
 		return name;
 	}
@@ -44,6 +45,5 @@ public class Rectangulo {
 	public String toString() {
 		return "Rectangulo [name=" + name + ", base=" + base + ", altura=" + altura + "]";
 	}
-	
-	
-}//class Rectangulo
+
+}// class Rectangulo
